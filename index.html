@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Book</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div id="container">
+
+        <div >
+            <div id="Navigation">
+                <div>Bible Book</div>
+                <div id="about" onclick="window.location='https://www.britannica.com/topic/The-Letter-of-Jeremiah'">About</div>
+            </div>
+            <div id="form">
+                <div>
+                    <label>BOOK NAME:</label>
+                    <input type="text" placeholder="Book Name..." id="name"/>
+                </div>
+                <div>
+                    <label>CHAPTER  :</label>
+                    <input type="text" placeholder="Chapter..." id="chapter"/>
+                </div>
+                <div>
+                    <label>VERSE    :</label>
+                    <input type="text" placeholder="Verse..." id="verse"/>
+                </div>
+                <button type="submit" onclick="Book()">Search</button>
+            </div>
+            <div id="display">
+
+                <h1 id="tname"></h1>
+                <p id="tnameval"></p>
+                <h1 id="txt"></h1>
+                <p id="textval"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
